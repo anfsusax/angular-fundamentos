@@ -1,1 +1,39 @@
-<p>view.viva works!</p>
+<div class="container">
+  <h2>View Viva (signal)</h2>
+
+  <p>O título abaixo está conectado ao estado interno do componente:</p>
+
+  <ul>
+    <li>{{ titulo() }}</li>
+  </ul>
+
+  <button (click)="mudarTitulo()">Mudar título</button>
+
+  <section class="biblia">
+    <h3>Por que esse exemplo usa Gênesis 1?</h3>
+
+    <p>
+      O início de Gênesis descreve algo extraordinário: Deus fala e o que não existia ganha forma e vida.
+      A criação surge da combinação entre <strong>estado</strong> (a vontade de Deus) e
+      <strong>manifestação</strong> (a luz surgindo).
+    </p>
+
+    <p>
+      Angular faz algo parecido com o HTML: naturalmente, ele é estático, mas quando ligamos um <strong>signal</strong> ao template,
+      o HTML começa a responder ao estado — ele ganha vida, como se recebesse um “Haja luz”.
+    </p>
+
+    <pre>{{ titulo() }}</pre>
+  </section>
+
+  <section class="card-explicacao">
+    <h3>Explicação</h3>
+    <ul>
+      <li><strong>Signal:</strong> <code>titulo = signal('...')</code> cria um estado reativo.</li>
+      <li><strong>Template:</strong> <code>{{ titulo() }}</code> reflete automaticamente qualquer mudança no estado.</li>
+      <li><strong>Função <code>mudarTitulo()</code>:</strong> demonstra a atualização do estado e reatividade.</li>
+      <li><strong>Analogia bíblica:</strong> Gênesis 1, mostrando a criação e transformação de algo estático em vivo.</li>
+      <li><strong>Estilo:</strong> cores vivas, botão chamativo, seção bíblica em destaque.</li>
+    </ul>
+  </section>
+</div>
