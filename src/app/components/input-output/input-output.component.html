@@ -1,0 +1,48 @@
+<div class="container">
+  <h2>Input / Output</h2>
+
+  <app-child
+    [mensagemDoPai]="mensagem"
+    (respostaParaPai)="receberResposta($event)">
+  </app-child>
+
+  <section *ngIf="respostaDoFilho" class="resposta-pai">
+    <p><strong>Resposta do Filho:</strong> {{ respostaDoFilho }}</p>
+  </section>
+</div>
+
+<section class="explicacao-card">
+  <h3>O que aconteceu aqui?</h3>
+  <p>
+    Neste exemplo, o <strong>componente pai</strong> envia uma mensagem para o
+    <strong>componente filho</strong> usando a propriedade <strong>@Input()</strong>.
+    É como quando Deus direciona uma instrução ao Filho: existe uma origem e um destino.
+  </p>
+
+  <p>
+    Depois disso, o <strong>filho</strong> emite um evento de volta usando
+    <strong>@Output()</strong> com <strong>EventEmitter</strong>, dizendo:
+    "Recebi sua mensagem e aqui está minha resposta".
+  </p>
+
+  <p>
+    Ou seja, você viu dois fluxos acontecendo:
+  </p>
+
+  <ul>
+    <li><strong>Pai → Filho</strong> via <code>@Input()</code> (dados descem)</li>
+    <li><strong>Filho → Pai</strong> via <code>@Output()</code> (eventos sobem)</li>
+  </ul>
+
+  <p>
+    Este padrão é um dos fundamentos do Angular. Ele organiza a comunicação entre
+    componentes de forma previsível, clara e estruturada.
+  </p>
+
+  <p>
+    A analogia bíblica deixa isso ainda mais claro:
+    assim como Deus comunica verdades, direção e propósito,
+    o Pai (componente pai) passa o estado.
+    Assim como o Filho responde, o componente filho devolve as ações ou dados.
+  </p>
+</section>

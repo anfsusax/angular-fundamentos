@@ -1,0 +1,47 @@
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  color: #0288d1;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Card Filho */
+.card-filho {
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #b3e5fc;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 2px 4px 8px rgba(0,0,0,0.15);
+}
+
+.card-filho button {
+  margin-top: 10px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #0288d1;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-filho button:hover {
+  background: #0277bd;
+}
+
+/* Resposta do Pai */
+.resposta-pai {
+  padding: 15px;
+  background: #c8e6c9;
+  border-radius: 10px;
+  color: #2e7d32;
+}

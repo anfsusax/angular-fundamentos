@@ -1,0 +1,31 @@
+<!-- home.component.html -->
+<div class="container">
+  <h1>Demonstração Angular</h1>
+
+  <div class="menu-container">
+    <nav>
+      <h2>Conceitos</h2>
+      <ul>
+        <li *ngFor="let item of homeService.itens"
+            (click)="homeService.selecionar(item)"
+            [class.active]="homeService.selecionado() === item">
+          {{ item.label }}
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="content">
+        <ng-container *ngIf="homeService.selecionado(); else welcome">
+          <ng-container *ngComponentOutlet="homeService.selecionado()?.component"></ng-container>
+        </ng-container>
+        <ng-template #welcome>
+          <div class="welcome-message">
+            <h2>Bem-vindo ao Angular Fundamentos!</h2>
+            <p>Selecione um tópico no menu ao lado para começar.</p>
+          </div>
+        </ng-template>
+      </div>
+    </main>
+  </div>
+</div>

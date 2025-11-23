@@ -3,8 +3,8 @@ import { Component, signal } from '@angular/core';
 @Component({
   selector: 'app-view-viva',
   standalone: true,
-  templateUrl: './view-viva.html',
-  styleUrls: ['./view-viva.css']
+  templateUrl: './view-viva.component.html',
+  styleUrls: ['./view-viva.component.css']
 })
 export class ViewVivaComponent {
   // Estado reativo

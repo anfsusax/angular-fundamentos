@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ViewViva } from './view-viva';
+import { Filho } from './filho';
 
-describe('ViewViva', () => {
-  let component: ViewViva;
-  let fixture: ComponentFixture<ViewViva>;
+describe('Filho', () => {
+  let component: Filho;
+  let fixture: ComponentFixture<Filho>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ViewViva]
+      imports: [Filho]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ViewViva);
+    fixture = TestBed.createComponent(Filho);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
